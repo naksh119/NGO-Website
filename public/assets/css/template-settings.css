@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/* ==== 
+ --------- template settings styles start ---------
+ ==== */
+.color-palate {
+  position: fixed;
+  left: 0px;
+  text-align: center;
+  top: 0%;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  max-width: 280px;
+  z-index: 99999;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.color-palate .color-palate-inner {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: all;
+  transition: all;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding-block: 40px;
+}
+.color-palate .color-palate-inner::-webkit-scrollbar {
+  width: 5px;
+}
+.color-palate .color-palate-inner::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.color-palate .color-palate-inner::-webkit-scrollbar-thumb {
+  background: #afa8a8;
+  border-radius: 5px;
+}
+.color-palate .color-palate-inner::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.color-palate .palate {
+  background: #e7ae27;
+  display: block;
+  float: left;
+  height: 45px;
+  margin: 0 2.5% 12px;
+  width: 20%;
+  cursor: pointer;
+  position: relative;
+}
+.color-palate .colors-list .active::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 800;
+}
+.color-palate .various-color {
+  overflow: hidden;
+  padding: 15px 0 5px;
+}
+.color-palate .colors-list {
+  margin: 0 20px;
+}
+.color-palate .secondary-head {
+  background: #222222;
+  padding: 14px 0;
+}
+.color-palate .secondary-color {
+  padding: 23px 0;
+}
+.color-palate .secondary-colors-list {
+  margin: 0 80px;
+}
+.color-palate .palate-foo {
+  color: #777777;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0 30px;
+  line-height: 1.8em;
+}
+.color-palate .palate-foo span {
+  display: block;
+  padding-top: 20px;
+  margin-top: 5px;
+  border-top: 1px dotted #b2b2b2;
+}
+.color-palate .palate.default-color {
+  background: #d9a86a;
+}
+.color-palate .palate.default-color::after {
+  color: #000000;
+}
+.color-palate .palate.blue-color {
+  background: #b3e5fc;
+}
+.color-palate .palate.blue-color::after {
+  color: #000000;
+}
+.color-palate .palate.brown-color {
+  background: #efc940;
+}
+.color-palate .palate.brown-color::after {
+  color: #000000;
+}
+.color-palate .palate.green-color {
+  background: #c1e899;
+}
+.color-palate .palate.green-color::after {
+  color: #000000;
+}
+.color-palate .palate.coral-color {
+  background: #ff8a65;
+}
+.color-palate .palate.coral-color::after {
+  color: #000000;
+}
+.color-palate .palate.peach-color {
+  background: #ebbda5;
+}
+.color-palate .palate.peach-color::after {
+  color: #000000;
+}
+.color-palate .palate.gray-color {
+  background: #e6e7e9;
+}
+.color-palate .palate.gray-color::after {
+  color: #000000;
+}
+.color-palate .palate.emerald-color {
+  background: #50c878;
+}
+.color-palate .palate.emerald-color::after {
+  color: #000000;
+}
+.color-palate .color-trigger,
+.color-palate .close-color-trigger {
+  background: #e7ae27;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  left: 100%;
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+      -ms-transform: translateY(-40%);
+          transform: translateY(-40%);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  mix-blend-mode: exclusion;
+}
+.color-palate .color-trigger i {
+  color: #000000;
+  font-size: 16px;
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+  margin-top: 0px;
+}
+.color-palate .close-color-trigger i {
+  color: #000000;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.color-palate .close-color-trigger {
+  display: none;
+}
+.color-palate h6 {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.color-palate .box-version {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.color-palate .option-box {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.color-palate .option-box .active {
+  background-color: var(--black);
+  color: var(--white);
+}
+.color-palate .option-box > li {
+  position: relative;
+  color: #000000;
+  width: 40%;
+  margin: 0px 3px;
+  cursor: pointer;
+  margin-bottom: 9px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-block;
+  background-color: #e7ae27;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  letter-spacing: 1px;
+}
+.color-palate .option-box > li:hover {
+  background-color: black;
+  color: var(--white);
+}
+.color-palate .purchase-box {
+  position: relative;
+  padding: 30px 10px 0px;
+  max-width: 250px;
+  margin-inline: auto;
+}
+.color-palate .purchase-box p {
+  color: #222222;
+  font-weight: 500;
+}
+.color-palate .purchase-box__btn {
+  position: relative;
+  color: #000000;
+  width: 50%;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 12px 12px;
+  font-size: 12px;
+  display: inline-block;
+  background-color: #e7ae27;
+  text-transform: uppercase;
+  margin-top: 25px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  letter-spacing: 2px;
+}
+.color-palate .purchase-box__btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.color-palate.visible-palate {
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+@media only screen and (min-width: 576px) {
+  .color-palate {
+    max-width: 320px;
+  }
+  .color-palate .color-trigger,
+  .color-palate .close-color-trigger {
+    width: 50px;
+    height: 50px;
+  }
+  .color-palate .purchase-box {
+    max-width: 100%;
+  }
+  .color-palate .color-trigger i {
+    font-size: 20px;
+  }
+  .color-palate .close-color-trigger i {
+    font-size: 24px;
+  }
+}
+/* ==== 
+ --------- template settings styles end ---------
+ ==== */

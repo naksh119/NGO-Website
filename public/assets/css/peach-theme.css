@@ -1,0 +1,16 @@
+/* ==== 
+ --------- peach color scheme styles start ---------
+ ==== */
+:root {
+  --base-bg: #ebbda5;
+  --base-color: #000000;
+}
+
+.base-img {
+  -webkit-filter: brightness(0) saturate(100%) invert(83%) sepia(12%) saturate(996%) hue-rotate(329deg) brightness(99%) contrast(87%);
+          filter: brightness(0) saturate(100%) invert(83%) sepia(12%) saturate(996%) hue-rotate(329deg) brightness(99%) contrast(87%);
+}
+
+/* ==== 
+ --------- peach color scheme styles end ---------
+ ==== */

@@ -1,0 +1,16 @@
+/* ==== 
+ --------- default color scheme styles start ---------
+ ==== */
+:root {
+  --base-bg:  #E9ECEF ;
+  --base-color: #000000;
+}
+
+.base-img {
+  -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(61%) saturate(314%) hue-rotate(352deg) brightness(91%) contrast(86%);
+          filter: brightness(0) saturate(100%) invert(70%) sepia(61%) saturate(314%) hue-rotate(352deg) brightness(91%) contrast(86%);
+}
+
+/* ==== 
+ --------- default color scheme styles end ---------
+ ==== */

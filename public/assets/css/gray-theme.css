@@ -1,0 +1,16 @@
+/* ==== 
+ --------- gray color scheme styles start ---------
+ ==== */
+:root {
+  --base-bg: #e6e7e9;
+  --base-color: #000000;
+}
+
+.base-img {
+  -webkit-filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(30%) hue-rotate(182deg) brightness(101%) contrast(86%);
+          filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(30%) hue-rotate(182deg) brightness(101%) contrast(86%);
+}
+
+/* ==== 
+ --------- gray color scheme styles end ---------
+ ==== */

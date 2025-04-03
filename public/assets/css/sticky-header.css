@@ -1,0 +1,11 @@
+/* ==== 
+ --------- sticky header styles start ---------
+ ==== */
+.want-sticky-header .sticky-header {
+  position: relative !important;
+  display: none;
+}
+
+/* ==== 
+ --------- sticky header styles end ---------
+ ==== */

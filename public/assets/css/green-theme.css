@@ -1,0 +1,16 @@
+/* ==== 
+ --------- green color scheme styles start ---------
+ ==== */
+:root {
+  --base-bg: #c1e899;
+  --base-color: #000000;
+}
+
+.base-img {
+  -webkit-filter: brightness(0) saturate(100%) invert(84%) sepia(32%) saturate(388%) hue-rotate(42deg) brightness(101%) contrast(89%);
+          filter: brightness(0) saturate(100%) invert(84%) sepia(32%) saturate(388%) hue-rotate(42deg) brightness(101%) contrast(89%);
+}
+
+/* ==== 
+ --------- green color scheme styles end ---------
+ ==== */

@@ -1,0 +1,16 @@
+/* ==== 
+ --------- emerald color scheme styles start ---------
+ ==== */
+:root {
+  --base-bg: #50c878;
+  --base-color: #000000;
+}
+
+.base-img {
+  -webkit-filter: brightness(0) saturate(100%) invert(77%) sepia(64%) saturate(451%) hue-rotate(76deg) brightness(85%) contrast(81%);
+          filter: brightness(0) saturate(100%) invert(77%) sepia(64%) saturate(451%) hue-rotate(76deg) brightness(85%) contrast(81%);
+}
+
+/* ==== 
+   --------- emerald color scheme styles end ---------
+   ==== */
