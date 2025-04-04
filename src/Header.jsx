@@ -1,9 +1,14 @@
 import React from "react";
+import Preloader from "./Preloader";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>  
+      {/* ==== preloader start ==== */}
+      <Preloader/>
+      {/* ==== preloader start ==== */}
+
       {/* ==== topbar start ==== */}
       <div className="topbar topbar__secondary d-none d-lg-block">
         <div className="container">
